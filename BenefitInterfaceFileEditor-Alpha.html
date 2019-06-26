@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Interface File Processor Style -->
     <link rel="stylesheet" href="InterfaceFileProcessor.css">
-    <title>Hello, world!</title>
+    <title>Benefit Interface File Editor</title>
   </head>
   <body>
     <!-- Jumbotron header -->
@@ -33,57 +33,141 @@
     <div id="myTabContent" class="tab-content">
     <div class="tab-pane fade show active" id="bfHeader">
         <p>Here we have the BF Header </p>
-        <form>
-            <ul>
-                <li class="form-group">
-                    <label for="RecordType">Record Type</label>
-                    <input class="form-control" id="RecordType" placeholder="Enter Record Type">
-                </li>
-                <li class="form-group">
-                    <label for="TransactionType">Transaction Type</label>
-                    <input class="form-control" id="TransactionType" placeholder="Enter Transaction Type">
-                </li>
-                <li class="form-group">
-                    <label for="Date">Date</label>
-                    <input class="form-control" id="Date" placeholder="Enter Date">
-                </li>
-                <li class="form-group">
-                    <label for="Time">Time</label>
-                    <input class="form-control" id="Time" placeholder="Enter Time">
-                </li>
-                <li class="form-group">
-                    <label for="ControlNumber">Control Number</label>
-                    <input class="form-control" id="ControlNumber" placeholder="Enter Control Number">
-                </li>
-                <li class="form-group">
-                    <label for="TotalDetailRecords">Total Detail Records</label>
-                    <input class="form-control" id="TotalDetailRecords" placeholder="Enter Total Detail Records">
-                </li>
-                <li class="form-group">
-                    <label for="ReservedForCounty">Reserved for County</label>
-                    <input class="form-control" id="ReservedForCounty" placeholder="This section is reserved for the County">
-                </li>
-                <li class="form-group">
-                    <label for="ResponseCode">Response Code</label>
-                    <input class="form-control" id="RepsonseCode" placeholder="Enter Response Code">
-                </li>
-            </ul>
-        </form>
         <div class="input-group mb-3">
             <div class="custom-file">
               <input type="file" class="custom-file-input" id="inputGroupFile02">
-              <label class="custom-file-label" for="inputGroupFile02">Upload benefit file here</label>
+              <label class="custom-file-label" for="inputGroupFile02">Upload benefit file</label>
             </div>
             <div class="input-group-append">
               <span class="input-group-text" id="">Upload</span>
             </div>
-          </div>      
+          </div>
+          
+        <form>
+            <ul>
+                <li class="form-group">
+                    <label for="RecordType">Record Type</label>
+                    <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                            </div>
+                            <select class="custom-select" id="RecordType">
+                              <option selected>Choose...</option>
+                              <option value="1">HD</option>
+                            </select>
+                          </div>      
+                </li>              
+                <li class="form-group">
+                    <label for="TransactionType">Transaction Type</label>
+                    <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="TransactionType">CA</span>
+                            </div>
+                            <input type="text" class="form-control" id="TransactionPrefix" placeholder="Counry Code" maxlength="2">
+                            <select class="custom-select" id="RecordType">
+                                    <option selected>Select...</option>
+                                    <option value="1">FSBE</option>
+                                    <option value="1">CSBE</option>
+                                    <option value="1">FSMO</option>
+                                    <option value="1">CSMO</option>
+                                  </select>
+                        </div>                        
+                </li>
+                <li class="form-group">
+                    <label for="Date">Date</label>
+                    <form>
+                            <input type="date" name="Date">
+                        </form> 
+                </li>
+                <li class="form-group">
+                    <label for="Time">Time</label>
+                    <input id="settime" type="time" step="1"
+       min="0:00" max="24:00" required>
+                </li>
+                <li class="form-group">
+                    <label for="ControlNumber">Control Number</label>
+                    <input class="form-control" id="ControlNumber" maxlength="6" placeholder="Enter Control Number">
+                </li>
+                <li class="form-group">
+                    <label for="CountyCode">County Code</label>
+                    <input class="form-control" id="CountyCode" maxlength="2" placeholder="Enter County Code">
+                </li>
+                <li class="form-group">
+                    <label for="ProfileNumber">Profile Number</label>
+                    <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                            </div>
+                            <select class="custom-select" id="ProfileType">
+                                    <option selected>Select...</option>
+                                    <option value="0600100">Food</option>
+                                    <option value="0600200">Cash</option>
+                                  </select>
+                            <input type="text" class="form-control" id="ProfilePrefix" placeholder="Counry Code" maxlength="2">
+                        </div>  
+                </li>
+                <li class="form-group">
+                    <label for="ResponseCode">Response Code</label>
+                    <input class="form-control" id="RepsonseCode" maxlength="4" placeholder="Enter Response Code">
+                </li>
+            </ul>
+        </form>
+          </div>  
     <!-- BF Detail Tab -->    
     </div>
     <div class="tab-pane fade" id="bfDetail">
         <p>Here we have the BF Detail</p>
-        
+        <table class="table table-striped"> 
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Record Type</th>
+                <th scope="col">Transaction Type</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Control Number</th>
+                <th scope="col">Total Record Details</th>
+                <th scope="col">Reserved for County</th>
+                <th scope="col">Response Code</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+            </tbody>
+          </table>
     </div>
+    <!-- BF Trailer Tab -->    
     <div class="tab-pane fade" id="bfTrailer">
         <p>Here we have the BF Trailer </p>
     </div>
