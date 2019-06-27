@@ -6,15 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Interface File Processor Style -->
-    <link href="http://allfont.net/allfont.css?fonts=exo-medium" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="InterfaceFileProcessor.css">
     <title> Benefit Interface File Editor </title>
+    <!-- Style-->
+    <style>
+      h1 {
+        color: black;
+        font-family: 'Exo', sans-serif;
+        font-size: 100%;
+        }
+      p {
+        color: black;
+        font-family: 'Exo', sans-serif;
+        font-size: 100%;
+        }
+    </style>
   </head>
   <body>
     <!-- Jumbotron header -->
-    <div style="background-color:#12477a;"class="jumbotron">
+    <div style="background-color:steelblue;"class="jumbotron">
         <h1 style="color:aliceblue;" class="display-3">Welcome to the Benefit File Interface Editor</h1>
         <p style="color:aliceblue;" class="lead">Read, edit, mockup, or save a Benefit File Interface.</p>
     </div>
@@ -43,11 +56,11 @@
     <!-- Edit File Tab -->
     <div id="myTabContent" class="tab-content">
     <div class="tab-pane fade show active" id="EditFile">
-        <p>Edit the contents of the file here </p>
+        <p> Edit the contents of the file here </p>
         <form>
             <ul>
                 <li class="form-group">
-                    <label style="background-color:#3f7aac;" style= "font-family: exoextralight;" for="RecordType">Enter Record Type</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="RecordType">Enter Record Type</label>
                     <div class="input-group mb-3">
                             <div class="input-group-prepend">
                               <label class="input-group-text" for="inputGroupSelect01">Options</label>
@@ -59,7 +72,7 @@
                           </div>      
                 </li>              
                 <li class="form-group">
-                    <label style="background-color:#3f7aac;" for="TransactionType">Enter Transaction Type</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="TransactionType">Enter Transaction Type</label>
                     <div class="input-group mb-3">
                             <div class="input-group-prepend">
                               <span class="input-group-text" id="TransactionType">CA</span>
@@ -75,26 +88,26 @@
                         </div>                        
                 </li>
                 <li class="form-group">
-                    <label style="background-color:#3f7aac;" for="Date">Select Date</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="Date">Select Date</label>
                     <form>
                             <input type="date" name="Date">
                         </form> 
                 </li>
                 <li class="form-group">
-                    <label style="background-color:#3f7aac;" for="Time">Enter Time</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="Time">Enter Time</label>
                     <input id="settime" type="time" step="1"
        min="0:00" max="24:00" required>
                 </li>
                 <li class="form-group">
-                    <label style="background-color:#3f7aac;" for="ControlNumber">Enter Control Number</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="ControlNumber">Enter Control Number</label>
                     <input class="form-control" id="ControlNumber" maxlength="6" placeholder="------">
                 </li>
                 <li class="form-group">
-                    <label style="background-color:#3f7aac;" for="CountyCode"> Enter County Code</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="CountyCode"> Enter County Code</label>
                     <input class="form-control" id="CountyCode" maxlength="2" placeholder="--">
                 </li>
                 <li class="form-group">
-                    <label style="background-color:#3f7aac;" for="ProfileNumber">Enter Profile Number</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="ProfileNumber">Enter Profile Number</label>
                     <div class="input-group mb-3">
                             <div class="input-group-prepend">
                             </div>
@@ -107,7 +120,7 @@
                         </div>  
                 </li>
                 <li class="form-group">
-                    <label style="background-color:#3f7aac;" for="ResponseCode">Enter Response Code</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="ResponseCode">Enter Response Code</label>
                     <input class="form-control" id="RepsonseCode" maxlength="4" placeholder="0000">
                 </li>
             </ul>
@@ -119,7 +132,7 @@
     <!-- Spreadsheet Tab -->    
     <div class="tab-pane fade" id="Spreadsheet">
         <p>View all the files here</p>
-        <table class="table table-striped"> 
+        <table style= "font-family: 'Exo', sans-serif;" class="table table-striped"> 
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -172,7 +185,7 @@
     </div>
     <!-- Legend Tab -->    
     <div class="tab-pane fade" id="Legend">
-            <table class="table table-sm">
+            <table style= "font-family: 'Exo', sans-serif;" class="table table-sm">
                     <thead>
                      <tr>
                         <th scope="col">Acronym</th>
