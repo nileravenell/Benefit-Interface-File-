@@ -1,0 +1,60 @@
+<!doctype html>
+    <html>
+    <body>
+
+    <p id="demo"></p>
+
+        <script>
+            var text, parser, xmlDoc;
+
+            text = "<bookstore><book>" +
+            "<title>Everyday Italian</title>" +
+            "<author>Giada De Laurentiis</author>" +
+            "<year>2005</year>" +
+            "</book></bookstore>";
+
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(text,"text/xml");
+
+            document.getElementById("demo").innerHTML =
+            xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        </script>
+
+
+
+
+
+function write_to_excel() {
+    str = "";
+    var mytable = document.getElementById("tbExport");
+    var rowCount = mytable.rows.length;
+    var colCount = mytable.getElementsByTagName("tr")[0].getElementsByTagName("th").length;
+    var ExcelApp = new ActiveXObject("Excel.Application");
+    var ExcelSheet = new ActiveXObject("Excel.Sheet");
+    //ExcelSheet.Application.Visible = true;
+    for (var i = 0; i < rowCount; i++) {
+        for (var j = 0; j < colCount; j++) {
+            if (i == 0) {
+                str = mytable.getElementsByTagName("tr")[i].getElementsByTagName("th")[j].innerText;
+            }
+            else {
+                str = mytable.getElementsByTagName("tr")[i].getElementsByTagName("td")[j].innerText;
+            }
+            ExcelSheet.ActiveSheet.Cells(i + 1, j + 1).Value = str;
+        }
+    }
+    ExcelSheet.autofit;
+    ExcelSheet.Application.Visible = true;
+    DisplayAlerts = true;
+    CollectGarbage();
+}
+    </body>
+    </html> 
+
+    <--Resouces-->
+    https://www.grapecity.com/blogs/how-to-importexport-excel-files-using-javascript-and-spread-sheets
+    https://stackoverflow.com/questions/40684130/how-to-upload-excel-file-in-javascript-or-convert-excel-to-text-file
+    https://stackoverflow.com/questions/19869639/how-to-call-a-javascript-function-within-an-html-body/19869671
+    https://stackoverflow.com/questions/19869639/how-to-call-a-javascript-function-within-an-html-body/19869671
+    https://www.codeproject.com/Questions/433079/Export-html-table-to-excel-using-javascript
+    https://www.w3schools.com/xml/xml_parser.asp

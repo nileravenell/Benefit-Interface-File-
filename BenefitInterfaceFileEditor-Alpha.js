@@ -38,7 +38,7 @@
         <label class="custom-file-label" for="inputGroupFile02">Upload benefit file</label>
       </div>
       <div class="input-group-append">
-        <span class="input-group-text" id="">Upload</span>
+        <span class="input-group-text" id="inputGroupFile02">Upload</span>
       </div>
     </div>
     <!-- Navigation Tabs -->
@@ -132,21 +132,17 @@
     <!-- Spreadsheet Tab -->    
     <div class="tab-pane fade" id="Spreadsheet">
         <p id= "Table">View all the files here</p>
-    <!-- Xml Parser :/ Working on it -->      
+    <!-- Xml Parser?? We working on it -->      
         <script>
             var parser, xmlDoc;
-            var text = "<RecordType><book>" 
-            
+            var text = "<title>inputGroupFile02</title>" +
+
             parser = new DOMParser();
             xmlDoc = parser.parseFromString(text,"text/xml");
             
-            document.getElementById("Table").innerHTML =
+            document.getElementById("inputGroupFile02").innerHTML =
             xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
-            
-            document.getElementById("Table").innerHTML =
-            xmlDoc.getElementsByTagName("author")[0].childNodes[0].nodeValue;
-            </script>
-            
+        </script>
     <!-- Display Table -->     
         <table style= "font-family: 'Exo', sans-serif;" class="table table-striped"> 
             <thead>
@@ -198,6 +194,25 @@
               </tr>
             </tbody>
           </table>
+        
+          <p id="demo"></p>
+
+
+          <script>
+              var text, parser, xmlDoc;
+  
+              text = "<bookstore><book>" +
+              "<title>inputGroupFile02</title>" +
+              "<author>Giada De Laurentiis</author>" +
+              "<year>2005</year>" +
+              "</book></bookstore>";
+  
+              parser = new DOMParser();
+              xmlDoc = parser.parseFromString(text,"text/xml");
+  
+              document.getElementById("demo").innerHTML =
+              xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+          </script>
     </div>
     <!-- Legend Tab -->    
     <div class="tab-pane fade" id="Legend">
