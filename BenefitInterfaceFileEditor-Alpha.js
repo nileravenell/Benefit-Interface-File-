@@ -132,7 +132,7 @@
     <!-- Spreadsheet Tab -->    
     <div class="tab-pane fade" id="Spreadsheet">
         <p id= "Table">View all the files here</p>
-    <!-- Xml Parser?? We working on it -->      
+    <!-- Xml Parser?? I'm working on it -->      
         <script>
             var parser, xmlDoc;
             var text = "<title>inputGroupFile02</title>" +
@@ -147,50 +147,1124 @@
         <table style= "font-family: 'Exo', sans-serif;" class="table table-striped"> 
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Record Type</th>
-                <th scope="col">Transaction Type</th>
-                <th scope="col">Date</th>
-                <th scope="col">Time</th>
-                <th scope="col">Control Number</th>
-                <th scope="col">County Code</th>
-                <th scope="col">Profile Number</th>
-                <th scope="col">Response Code</th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
+                <th scope="row">#</th>
+                <td>
+                    <script>
+                                var text, parser, xmlDoc;
+                    
+                                text = "<File><Info>" +
+                                "<title>inputGroupFile02</title>" +
+                                "<Info></File>";
+                    
+                                parser = new DOMParser();
+                                xmlDoc = parser.parseFromString(text,"text/xml");
+                    
+                                document.getElementById("demo").innerHTML =
+                                xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                    
+                </td>
+                <td>
+                    <script>
+                                var text, parser, xmlDoc;
+                    
+                                text = "<File><Info>" +
+                                "<title>inputGroupFile02</title>" +
+                                "<Info></File>";
+                    
+                                parser = new DOMParser();
+                                xmlDoc = parser.parseFromString(text,"text/xml");
+                    
+                                document.getElementById("demo").innerHTML =
+                                xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                               
+                </td>
+                <td>
+                    <script>
+                                var text, parser, xmlDoc;
+                    
+                                text = "<File><Info>" +
+                                "<title>inputGroupFile02</title>" +
+                                "<Info></File>";
+                    
+                                parser = new DOMParser();
+                                xmlDoc = parser.parseFromString(text,"text/xml");
+                    
+                                document.getElementById("demo").innerHTML =
+                                xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                var text, parser, xmlDoc;
+                    
+                                text = "<File><Info>" +
+                                "<title>inputGroupFile02</title>" +
+                                "<Info></File>";
+                    
+                                parser = new DOMParser();
+                                xmlDoc = parser.parseFromString(text,"text/xml");
+                    
+                                document.getElementById("demo").innerHTML =
+                                xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                var text, parser, xmlDoc;
+                    
+                                text = "<File><Info>" +
+                                "<title>inputGroupFile02</title>" +
+                                "<Info></File>";
+                    
+                                parser = new DOMParser();
+                                xmlDoc = parser.parseFromString(text,"text/xml");
+                    
+                                document.getElementById("demo").innerHTML =
+                                xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                var text, parser, xmlDoc;
+                    
+                                text = "<File><Info>" +
+                                "<title>inputGroupFile02</title>" +
+                                "<Info></File>";
+                    
+                                parser = new DOMParser();
+                                xmlDoc = parser.parseFromString(text,"text/xml");
+                    
+                                document.getElementById("demo").innerHTML =
+                                xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                var text, parser, xmlDoc;
+                    
+                                text = "<File><Info>" +
+                                "<title>inputGroupFile02</title>" +
+                                "<Info></File>";
+                    
+                                parser = new DOMParser();
+                                xmlDoc = parser.parseFromString(text,"text/xml");
+                    
+                                document.getElementById("demo").innerHTML =
+                                xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                var text, parser, xmlDoc;
+                    
+                                text = "<File><Info>" +
+                                "<title>inputGroupFile02</title>" +
+                                "<Info></File>";
+                    
+                                parser = new DOMParser();
+                                xmlDoc = parser.parseFromString(text,"text/xml");
+                    
+                                document.getElementById("demo").innerHTML =
+                                xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
               </tr>
               <tr>
-                <th scope="row">2</th>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
+                <th scope="row">Record Type</th>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                    
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                               
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
               </tr>
               <tr>
-                <th scope="row">3</th>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
+                <th scope="row">Transaction Type</th>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                    
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                               
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Date</th>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                    
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                               
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Time</th>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                    
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                               
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Control Number</th>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                    
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                               
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+              </tr>
+               <tr>
+                <th scope="row">Country Code</th>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                    
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                               
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Profile Number</th>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                    
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                               
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Response Code</th>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                    
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>                               
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
+                <td>
+                    <script>
+                                    var text, parser, xmlDoc;
+                        
+                                    text = "<File><Info>" +
+                                    "<title>inputGroupFile02</title>" +
+                                    "<Info></File>";
+                        
+                                    parser = new DOMParser();
+                                    xmlDoc = parser.parseFromString(text,"text/xml");
+                        
+                                    document.getElementById("demo").innerHTML =
+                                    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                    </script>           
+                </td>
               </tr>
             </tbody>
           </table>
