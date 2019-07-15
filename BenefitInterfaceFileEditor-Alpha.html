@@ -4,31 +4,48 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- Js File reader -->
+    <script src="BenefitInterfaceFileeditor-Alpha.js"></script>
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Interface File Processor Style -->
-    <link rel="stylesheet" href="InterfaceFileProcessor.css">
-    <title>Benefit Interface File Editor</title>
+    <link rel="stylesheet" href="BenefitInterfaceFileEditor-Alpha.css">
+    <title> Benefit Interface File Editor </title>
+    <!-- Style-->
+    <style>
+      h1 {
+        color: black;
+        font-family: 'Exo', sans-serif;
+        font-size: 100%;
+        }
+      p {
+        color: black;
+        font-family: 'Exo', sans-serif;
+        font-size: 100%;
+        }
+    </style>
   </head>
-  <body>
+  <body onload="init()">
     <!-- Jumbotron header -->
-    <div class="jumbotron">
-        <h1 class="display-3">Welcome to the Benefit File Interface Editor</h1>
-        <p class="lead">Read, edit, mockup, or save a Benefit File Interface.</p>
+    <div style="background-color:steelblue;"class="jumbotron">
+        <h1 style="color:aliceblue;" class="display-3">Welcome to the Cal SAWS File Interface Editor</h1>
+        <p style="color:aliceblue;" class="lead">Read, edit, mockup, or save a file here.</p>
     </div>
-    <!-- Upload -->
-    <div class="input-group mb-3">
-      <div class="custom-file">
-        <input type="file" class="custom-file-input" id="inputGroupFile02">
-        <label class="custom-file-label" for="inputGroupFile02">Upload benefit file</label>
-      </div>
-      <div class="input-group-append">
-        <span class="input-group-text" id="">Upload</span>
-      </div>
+    <!-- Upload file -->
+    <div>
+        <label style= "font-family: 'Exo', sans-serif;" for="RegularFile">Upload file</label>
+        <input id="fileInput" type="file" name="file" />
+        <pre id="fileContent"></pre>
+    </div>
+    <!--Upload XML file-->
+    <div>
+        <label style= "font-family: 'Exo', sans-serif;" for="XMLFile">Upload XML File</label>
+        <input id="XMLInput" type="file" name="file" />
+        
     </div>
     <!-- Navigation Tabs -->
-    <ul class="nav nav-tabs">
+    <ul style="list-style-type:none;" class="nav nav-tabs">
         <li class="nav-item">
           <a class="nav-link active" data-toggle="tab" href="#EditFile">Edit File</a>
         </li>
@@ -42,11 +59,11 @@
     <!-- Edit File Tab -->
     <div id="myTabContent" class="tab-content">
     <div class="tab-pane fade show active" id="EditFile">
-        <p>Edit the contents of the file here </p>
+        <p> Edit the contents of the file here </p>
         <form>
             <ul>
                 <li class="form-group">
-                    <label for="RecordType">Enter Record Type</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="RecordType">Enter Record Type</label>
                     <div class="input-group mb-3">
                             <div class="input-group-prepend">
                               <label class="input-group-text" for="inputGroupSelect01">Options</label>
@@ -58,7 +75,7 @@
                           </div>      
                 </li>              
                 <li class="form-group">
-                    <label for="TransactionType">Enter Transaction Type</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="TransactionType">Enter Transaction Type</label>
                     <div class="input-group mb-3">
                             <div class="input-group-prepend">
                               <span class="input-group-text" id="TransactionType">CA</span>
@@ -74,26 +91,26 @@
                         </div>                        
                 </li>
                 <li class="form-group">
-                    <label for="Date">Select Date</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="Date">Select Date</label>
                     <form>
                             <input type="date" name="Date">
                         </form> 
                 </li>
                 <li class="form-group">
-                    <label for="Time">Enter Time</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="Time">Enter Time</label>
                     <input id="settime" type="time" step="1"
        min="0:00" max="24:00" required>
                 </li>
                 <li class="form-group">
-                    <label for="ControlNumber">Enter Control Number</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="ControlNumber">Enter Control Number</label>
                     <input class="form-control" id="ControlNumber" maxlength="6" placeholder="------">
                 </li>
                 <li class="form-group">
-                    <label for="CountyCode"> Enter County Code</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="CountyCode"> Enter County Code</label>
                     <input class="form-control" id="CountyCode" maxlength="2" placeholder="--">
                 </li>
                 <li class="form-group">
-                    <label for="ProfileNumber">Enter Profile Number</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="ProfileNumber">Enter Profile Number</label>
                     <div class="input-group mb-3">
                             <div class="input-group-prepend">
                             </div>
@@ -106,7 +123,7 @@
                         </div>  
                 </li>
                 <li class="form-group">
-                    <label for="ResponseCode">Enter Response Code</label>
+                    <label style= "font-family: 'Exo', sans-serif;" for="ResponseCode">Enter Response Code</label>
                     <input class="form-control" id="RepsonseCode" maxlength="4" placeholder="0000">
                 </li>
             </ul>
@@ -117,24 +134,36 @@
       </div>  
     <!-- Spreadsheet Tab -->    
     <div class="tab-pane fade" id="Spreadsheet">
-        <p>View all the files here</p>
-        <table class="table table-striped"> 
+        <p id= "Table">View all the files here</p>
+    <!-- Display Table -->     
+        <table style= "font-family: 'Exo', sans-serif;" class="table table-striped"> 
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Record Type</th>
-                <th scope="col">Transaction Type</th>
-                <th scope="col">Date</th>
-                <th scope="col">Time</th>
-                <th scope="col">Control Number</th>
-                <th scope="col">County Code</th>
-                <th scope="col">Profile Number</th>
-                <th scope="col">Response Code</th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
+                <th scope="row">#</th>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X </td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <th scope="row">Record Type</th>
                 <td>X</td>
                 <td>X</td>
                 <td>X</td>
@@ -145,7 +174,7 @@
                 <td>X</td>
               </tr>
               <tr>
-                <th scope="row">2</th>
+                <th scope="row">Transaction Type</th>
                 <td>X</td>
                 <td>X</td>
                 <td>X</td>
@@ -156,7 +185,63 @@
                 <td>X</td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row">Date</th>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <th scope="row">Time</th>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <th scope="row">Control Number</th>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</script>           
+                </td>
+              </tr>
+               <tr>
+                <th scope="row">Country Code</th>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <th scope="row">Profile Number</th>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <th scope="row">Response Code</th>
                 <td>X</td>
                 <td>X</td>
                 <td>X</td>
@@ -171,7 +256,7 @@
     </div>
     <!-- Legend Tab -->    
     <div class="tab-pane fade" id="Legend">
-            <table class="table table-sm">
+            <table style= "font-family: 'Exo', sans-serif;" class="table table-sm">
                     <thead>
                      <tr>
                         <th scope="col">Acronym</th>
