@@ -41,7 +41,7 @@ function XMLParser(text){
 
 //Display XML Content
 function XMLContent(){
-  var elmnt = document.getElementById(node.tagName);
-  var attr = elmnt.getAttributeNode().value;
-  document.getElementById().innerHTML = attr;
+  var elmnt = document.getElementById('H1')[0];
+  var attr = elmnt.getAttributeNode('class').value;
+  document.getElementById("display").innerHTML = attr;
 }
