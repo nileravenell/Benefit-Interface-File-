@@ -18,7 +18,7 @@ function handleFileLoad(event){
 function handleXMLFileSelect(event){
   const reader = new FileReader()
   reader.onload = handleXMLFileLoad;
-  reader.readAsText(event.target.files[0])
+  reader.readAsText(event.target.files[0])   
 }
 
 function handleXMLFileLoad(event){

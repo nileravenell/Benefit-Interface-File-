@@ -12,19 +12,6 @@
     <!-- Interface File Processor Style -->
     <link rel="stylesheet" href="BenefitInterfaceFileEditor-Alpha.css">
     <title> Benefit Interface File Editor </title>
-    <!-- Style-->
-    <style>
-      h1 {
-        color: black;
-        font-family: 'Exo', sans-serif;
-        font-size: 100%;
-        }
-      p {
-        color: black;
-        font-family: 'Exo', sans-serif;
-        font-size: 100%;
-        }
-    </style>
   </head>
   <body onload="init()">
     <!-- Jumbotron header -->
@@ -48,7 +35,23 @@
     <h1 class="XMLInput">Click the button to display XML content</h1>
     <button onclick="XMLContent()">Display</button>
     <p id="XMLInput"></p>
+    <ul>
+      <li class="form-group d-input">
+        <label style= "font-family: 'Exo', sans-serif;" for="Element">Element</label>
+        <input class="form-control" id="Element" placeholder="------">
+      </li>
+      <li class="form-group d-date">
+        <label style= "font-family: 'Exo', sans-serif;" for="Date">Select Date</label>
+          <form>
+                  <input type="date" name="Date">
+          </form> 
+      </li>
+      <li class="form-group d-time">
+        <label style= "font-family: 'Exo', sans-serif;" for="Time">Enter Time</label>
+          <input id="settime" type="time" step="1" min="0:00" max="24:00" required>
+      </li>
 
+    </ul>
     <!-- Navigation Tabs -->
     <ul style="list-style-type:none;" class="nav nav-tabs">
         <li class="nav-item">
@@ -99,7 +102,7 @@
                     <label style= "font-family: 'Exo', sans-serif;" for="Date">Select Date</label>
                     <form>
                             <input type="date" name="Date">
-                        </form> 
+                    </form> 
                 </li>
                 <li class="form-group">
                     <label style= "font-family: 'Exo', sans-serif;" for="Time">Enter Time</label>
