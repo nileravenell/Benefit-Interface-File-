@@ -16,7 +16,17 @@ h1 {
 }
 .d-date {
     list-style: none;
+
 }
 .d-time {
     list-style: none;
+}
+.wallpaper {
+    background-color:steelblue;
+}
+.bigtitle {
+    color:aliceblue;
+}
+.subtitle {
+    color:aliceblue;
 }
