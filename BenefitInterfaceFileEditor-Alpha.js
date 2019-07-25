@@ -1,7 +1,10 @@
+var inContent;
+
 //Hanldle File Select
 function init(){
   document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
   document.getElementById('XMLInput').addEventListener('change', handleXMLFileSelect, false);
+  document.getElementById('userInput'),addEventListener('click', handleFileWrite, false)
 }
 
 function handleFileSelect(event){
@@ -12,7 +15,14 @@ function handleFileSelect(event){
 
 function handleFileLoad(event){
   document.getElementById('fileContent').textContent = event.target.result;
-  let fileContent = String('fileContent')
+  inContent = event.target.result;
+  console.log(inContent);
+  var transaction_code = inContent.substr(0,2);
+  console.log(transaction_code);
+  var client_index_number = inContent.substr(39,9);
+  console.log(client_index_number);
+  var program_end_date = inContent.substr(119,4);
+  console.log(program_end_date);
 }
 
 //XMl Handles File Select
@@ -35,6 +45,7 @@ function XMLParser(text){
   let dateFormat;
   let target;
   let fieldIndex = 0;
+  let counterIndex = 0;
   while (stack.length > 0) {
     let node = stack.pop();
     for (i = 0; node.children.length > i; i++){
@@ -79,19 +90,23 @@ function XMLParser(text){
         labelNode.innerHTML = node.getAttribute("name");
         inputNode.id = "fields" + String(fieldIndex);
         labelNode.for = inputNode.id
-        inputNode.maxLength = parseInt(node.getAttribute("length"), 10);
         /*fieldNode = document.createElement("li");
         fieldNode.innerHTML = node.getAttribute("name");
         document.getElementById(target.id).appendChild(fieldNode);*/
+        let length = parseInt(node.getAttribute("length"), 10);
+        inputNode.maxLength = length;
+        inputNode.value = inContent.substr(counterIndex, length);
+        counterIndex += length;
     }
   }
 }
 
 //Display XML Content
-function XMLContent(){
-  var elmnt = document.getElementsByTagName('H1')[0];
-  var attr = elmnt.getAttributeNode('class').value;
-  document.getElementById("XMLInput").innerHTML = attr;
+function handleFileWrite(){
+  for (let element of document.getElementById('interfaceForm').elements){
+    
+  }
+}
 }
 
 //XML Display

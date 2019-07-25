@@ -30,11 +30,6 @@
         <label style= "font-family: 'Exo', sans-serif;" for="XMLFile">Upload XML File</label>
         <input id="XMLInput" type="file" name="file" />
     </div>
-
-    <!-- Display button? -->
-    <h1 class="XMLInput">Click the button to display XML content</h1>
-    <button onclick="XMLContent()">Display</button>
-    <p id="XMLInput"></p>
    <!-- <ul>
       <li class="form-group d-input">
         <label style= "font-family: 'Exo', sans-serif;" for="Element">Element</label>
@@ -51,11 +46,12 @@
           <input id="settime" type="time" step="1" min="0:00" max="24:00" required>
       </li>
     </ul> -->
-    <form>
+    <form id= 'interfaceForm'>
       <div id="mount"></div>
     </form>
     </div>
-
+    <!-- Display button? -->
+      <button id= "userInput" onclick="handleFileWrite()">Display</button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
