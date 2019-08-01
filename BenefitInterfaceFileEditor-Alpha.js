@@ -23,6 +23,7 @@ function handleFileLoad(event){
   console.log(client_index_number);
   var program_end_date = inContent.substr(119,4);
   console.log(program_end_date);
+  console.log(event.target.result.length);
 }
 
 //XMl Handles File Select
@@ -43,9 +44,9 @@ function XMLParser(text){
   let XMLDoc = parser.parseFromString(text,"text/xml");
   let stack = [XMLDoc];
   let dateFormat;
-  let target;
   let fieldIndex = 0;
   let counterIndex = 0;
+  let lengthCounter = 0;
   while (stack.length > 0) {
     let node = stack.pop();
     for (i = 0; node.children.length > i; i++){
@@ -97,6 +98,16 @@ function XMLParser(text){
         inputNode.maxLength = length;
         inputNode.value = inContent.substr(counterIndex, length);
         counterIndex += length;
+        lengthCounter -= length;
+        if (lengthCounter == 0) {
+          counterIndex ++;
+        }
+        else if (lengthCounter < 0) {
+          console.log("shoot! u blew it..")
+        }
+        break;
+      case "length":
+       lengthCounter = node.innerHTML;       
     }
   }
 }
@@ -106,7 +117,6 @@ function handleFileWrite(){
   for (let element of document.getElementById('interfaceForm').elements){
     
   }
-}
 }
 
 //XML Display
