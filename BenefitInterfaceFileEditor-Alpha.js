@@ -4,7 +4,7 @@ var inContent;
 function init(){
   document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
   document.getElementById('XMLInput').addEventListener('change', handleXMLFileSelect, false);
-  document.getElementById('userInput'),addEventListener('click', handleFileWrite, false)
+  document.getElementById('downloadInput').addEventListener('click', handleFileWrite, false);
 }
 
 function handleFileSelect(event){
@@ -114,9 +114,15 @@ function XMLParser(text){
 
 //Display XML Content
 function handleFileWrite(){
+  let fileName = "testfile.txt";
+  let fileString = "";
   for (let element of document.getElementById('interfaceForm').elements){
-    
+    fileString += element.value
   }
+  var pp = document.createElement('a');
+  pp.setAttribute('href', 'data:text/plain;charset=utf=8,' + encodeURIComponent(fileString));
+  pp.setAttribute('download', fileName);
+  pp.click();
 }
 
 //XML Display
